@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/smallImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="11dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="13dp"
+        android:focusable="false"
+        />
+
+    <TextView
+        android:id="@+id/trackName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="23dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:layout_above="@+id/artistName"
+        android:layout_toEndOf="@+id/smallImage"
+        android:layout_marginBottom="21dp"
+        android:focusable="false"
+        />
+
+    <TextView
+        android:id="@+id/artistName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/smallImage"
+        android:layout_alignStart="@+id/trackName"
+        android:layout_marginBottom="12dp"
+        android:text="TextView"
+        android:textSize="18sp"
+        android:focusable="false"
+        />
+
+    <ImageButton
+        android:id="@+id/favoriteImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/smallImage"
+        android:layout_marginEnd="26dp"
+        app:srcCompat="@android:drawable/btn_star_big_off"
+        android:onClick="favoriteAction"
+        android:focusable="false"
+        />
+
+</RelativeLayout>
